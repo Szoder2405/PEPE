@@ -1,0 +1,34 @@
+# Configuración del robot
+robot:
+  length: 0.162      # metros (largo total del robot)
+  width: 0.212       # metros (ancho total)
+  origin_offset: [-0.032, 0.0]  # desplazamiento del centro geométrico respecto a base_link
+
+# Posiciones de los 6 sensores ToF respecto al centro del robot (base_link)
+# Las coordenadas están en metros
+# theta: orientación en radianes (0 = apunta hacia adelante, + = antihorario)
+sensors:
+  - id: 0
+    x: 0.081      # frontal izquierdo
+    y: -0.085
+    theta: 0.0    # apunta hacia adelante
+  - id: 1
+    x: 0.081      # frontal derecho
+    y: 0.085
+    theta: 0.0
+  - id: 2
+    x: 0.074      # lateral derecho (adelante)
+    y: 0.106
+    theta: 1.57   # 90° (apunta a la derecha)
+  - id: 3
+    x: 0.074     # lateral izquierdo (adelante)
+    y: -0.106
+    theta: -1.57  # -90° (apunta a la izquierda)
+  - id: 4
+    x: -0.081     # trasero derecho
+    y: 0.070
+    theta: 3.14   # 180° (apunta hacia atrás)
+  - id: 5
+    x: -0.081     # trasero izquierdo
+    y: -0.070
+    theta: 3.14

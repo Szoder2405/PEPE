@@ -1,0 +1,6 @@
+# Dependencias para visualizador ROS2 en Windows
+roslibpy>=1.4.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+pyyaml>=6.0
+scipy>=1.10.0
